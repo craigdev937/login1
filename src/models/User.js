@@ -43,8 +43,7 @@ UserSchema.methods.generateAuthtoken = async function() {
 };
 
 // Storing Messages
-UserSchema.methods.addmessage = 
-async function(name, email, phone, message) {
+UserSchema.methods.addmessage = async function(name, email, phone, message) {
     try {
         this.messages = this.messages.concat({
             name, email, phone, message

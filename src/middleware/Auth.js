@@ -3,7 +3,7 @@ import { User } from "../models/User.js";
 
 export const Auth = async (req, res, next) => {
     try {
-        const token = req.bookies.jwtoken;
+        const token = req.cookies.jwtoken;
         const verifyToken = jwt.verify(token, process.env.JWT_SECRET);
         const rootUser = await User.findOne({
             _id: verifyToken._id,
