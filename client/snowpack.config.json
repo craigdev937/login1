@@ -1,0 +1,19 @@
+{
+    "mount": {
+        "src": "/"
+    },
+
+    "devOptions": {
+        "port": 8080
+    },
+
+    "optimize": {
+        "bundle": true,
+        "minify": true,
+        "splitting": true,
+        "treeshake": true
+    }
+}
+
+
+
