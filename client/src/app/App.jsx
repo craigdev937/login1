@@ -1,11 +1,12 @@
 import React from "react";
 import "./App.css";
-import { Home } from "../containers/Home";
+import "bootstrap/dist/css/bootstrap.css";
+import { Routes } from "../pages/Routes";
 
 export const App = () => {
     return (
         <React.Fragment>
-            <Home />
+            <Routes />
         </React.Fragment>
     );
 };
